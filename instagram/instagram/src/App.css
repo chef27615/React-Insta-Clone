@@ -10,10 +10,25 @@
 .headerDiv{
   width: 55%;
   height: 3rem;;
-  margin: 0 auto;
+  margin: 20px auto;
   
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.instaLogos{
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100%;
+}
+
+.instaLogos h2{
+  /* border: 1px solid orange; */
+  margin-left: 10px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-size: 29px;
+  color: #333;
 }
 
 .fa-instagram {
@@ -30,7 +45,7 @@
 }
 
 input{
-  margin-top: 10px;
+  margin-top: 13px;
   width: 100%;
   text-align: center;
   height: 25px;
@@ -48,7 +63,7 @@ input{
 
 .userIcon i{
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 13px;
   color: #999;
 }
 

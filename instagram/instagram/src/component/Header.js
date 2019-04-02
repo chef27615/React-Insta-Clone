@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import instaLogoFont from '../instaLogoFont.png';
+
+
+
+
+
 
 
 class Header extends Component {
@@ -7,9 +11,10 @@ class Header extends Component {
     return (
       <div className="headerDiv">
         <div className="instaLogos">
-            <i className="fab fa-instagram"></i>
-            <img src="../instaLogoFont.png" />
+            <i className="fab fa-instagram">  |</i>
+            <h2 style={logoFont}> Instagram</h2>
         </div>
+         
         <div className="searchBar">
             <input 
                 
@@ -28,5 +33,13 @@ class Header extends Component {
     )
   }
 }
+
+
+
+const logoFont = {
+  fontFamily : 'Norican'
+}
+
+
 
 export default Header;

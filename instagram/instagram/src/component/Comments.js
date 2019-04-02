@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+
 
 const Comments = props => {
-    console.log(props)
+   
     
     const {username, text}=props.comment 
 
@@ -12,6 +14,13 @@ const Comments = props => {
     </div>
   );
 }
+
+
+Comments.propTypes ={
+  username: PropTypes.string,
+  text: PropTypes.string
+}
+
 
 
 export default Comments;
