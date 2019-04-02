@@ -1,0 +1,132 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.headerDiv{
+  width: 55%;
+  height: 3rem;;
+  margin: 20px auto;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.instaLogos{
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100%;
+}
+
+.instaLogos h2{
+  /* border: 1px solid orange; */
+  margin-left: 10px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-size: 29px;
+  color: #333;
+}
+
+.fa-instagram {
+  font-size: 40px;
+  margin: 5px;
+  color: #999;
+}
+
+.searchBar{
+  
+  align-self: center;
+  height: 100%;
+  
+}
+
+input{
+  margin-top: 13px;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  background-color: #ededed;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.userIcon{
+  
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.userIcon i{
+  font-size: 25px;
+  margin-top: 13px;
+  color: #999;
+}
+
+.postWrapper{
+  border: 1px solid #dcdcdc;
+  width: 54.5%;
+  margin: 10px auto;
+}
+
+.userInfo {
+  
+  margin: 0 auto;
+  display: flex;
+}
+
+.userInfo img {
+  height: 40px;
+  margin: 10px 20px;
+  border-radius: 50%;
+}
+
+.postIcon{
+  
+  text-align: start;
+  font-size: 30px;
+}
+
+.postIcon i{
+  
+  margin: 5px 15px;
+  color: #cbcbcb;
+}
+
+.postText{
+  text-align: start;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.commentWrapper{
+  display: flex;
+}
+
+.commentWrapper .commentName{
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 20px; 
+  font-size: 15px;
+}
+
+.commentWrapper .commentText{
+  font-size: 14px;
+  margin-left: 8px;
+  margin-top: 5px
+}
+
+.postTime{
+  text-align: start;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  color: #555;
+}
+
+
