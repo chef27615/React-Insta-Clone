@@ -6,9 +6,9 @@ const Comments = props => {
     const {username, text}=props.comment 
 
     return (
-    <div>
-      <div>{username}</div>
-      <div>{text}</div>
+    <div className="commentWrapper">
+      <div className="commentName">{username}</div>
+      <div className="commentText">{text}</div>
     </div>
   );
 }
