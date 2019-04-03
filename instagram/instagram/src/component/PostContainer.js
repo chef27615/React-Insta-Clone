@@ -2,13 +2,18 @@ import React from 'react';
 import Comments from './Comments';
 import PropTypes from 'prop-types';
 import CommentForm from './CommentForm';
+import CommentSection from './CommentSection';
 
 
 class PostContainer extends React.Component{
 
+    state={
+        comment: this.props.user.comment
+    }
    
     render(){
-    const {username, thumbnailUrl, imageUrl, likes, timestamp} = this.props.user
+    const {username, thumbnailUrl, imageUrl, likes, timestamp, comments } = this.props.user
+    //console.log(comments)
         return(
             <div className="postContainerWrapper">
                 <div className="postWrapper">
@@ -23,21 +28,17 @@ class PostContainer extends React.Component{
                     <i className="far fa-comment"></i>
                     </div>
                     <div className="postText">{likes} Likes</div>
-                    </div>
 
-                    <div className="postTime">{timestamp}</div>
+                    </div>
+                    <CommentSection comments = {comments} key = {comments.id}/>
+                     <div className="postTime">{timestamp}</div>
 
                 </div>
             </div>
         );
     } 
 
-    addComment = comment =>{
-        this.setState({
-            comment:[...this.state.comment, comment]
-        });
     
-    };
 
 
 

@@ -6,26 +6,21 @@ import PropTypes from 'prop-types';
 
 
 class Comments extends Component{
-  
-  
 
   state={
-    userComments: this.props.userComment
+    comment : this.props.comment
   }
-  
-  
-  
-  
-  render(){ 
-    return(
 
-      <div className="comments">
+  render(){ 
+
+    const {username, text}=this.state.comment
+
+    // console.log(this.state.comment)
+    return(
         <div className="comment">
-        <h4>{this.state.userComments.username}</h4>
-        <p>{this.state.userComments.text}</p>
+        <h4>{username}</h4>
+        <p>{text}</p>
         </div>
-        
-      </div>
     );
   }
 }

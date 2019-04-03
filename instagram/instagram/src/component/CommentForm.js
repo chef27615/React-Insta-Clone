@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class CommentForm extends Component {
 
 state={
-    name:''
+    name:'lowkey'
 }
 
 handleChange=(e)=>{
@@ -15,7 +15,7 @@ handleChange=(e)=>{
 handleSubmit=(e)=>{
     e.preventDefault();
 
-    this.props.addComment({
+    this.props.addNewComment({
         name: this.state.name,
         id: Date.now()
     })

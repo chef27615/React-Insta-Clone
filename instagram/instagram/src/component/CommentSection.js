@@ -1,21 +1,27 @@
 import React, { Component } from 'react'
 import Comments from './Comments';
+import CommentForm from './CommentForm';
 class CommentSection extends Component {
   
   state={
-    userComments: this.props.user.comments
+    comments: this.props.comments
   }
   
   
-  addNewComment(){
-
+  addNewComment = comment => {
+    this.setState({
+        comments: [... this.state.comments, comment]
+    })
   }
     render() {
-        console.log(this.state.userComments)
+        // console.log(this.state.comments)
     return (
-      <div>
-        
-      </div>
+       <div>
+           {this.state.comments.map(comment=>
+            <Comments comment={comment} key={comment.id} />
+            )}
+           <CommentForm addNewComment={this.addNewComment} />
+       </div>
     )
   }
 }

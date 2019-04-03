@@ -29,11 +29,7 @@ class App extends Component {
 
         {this.state.userData.map(user=>
           <PostContainer user={user} key={user.id} />
-          )}
-
-        {this.state.userData.map(user=>
-          <CommentSection user={user} key={user.id} />
-          )}  
+          )} 
       </div>
     );
   }
