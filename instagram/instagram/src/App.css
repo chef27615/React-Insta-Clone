@@ -103,21 +103,18 @@ input{
   font-weight: 600;
 }
 
-.commentWrapper{
-  display: flex;
+.comment{
+  display: grid;
+  /* border: 1px solid orange; */
+  grid-template-columns: 1fr 2fr;
+  text-align: start;
 }
-
-.commentWrapper .commentName{
-  font-weight: 600;
-  margin-top: 5px;
-  margin-left: 20px; 
-  font-size: 15px;
+.comment h4{
+  height: 100%;
+  margin: 0 5px 5px 20px;
 }
-
-.commentWrapper .commentText{
-  font-size: 14px;
-  margin-left: 8px;
-  margin-top: 5px
+.comment p{
+  margin: 0
 }
 
 .postTime{
