@@ -4,18 +4,25 @@ import './App.css';
 import Header from './component/Header';
 import PostContainer from './component/PostContainer';
 import dummyData from './dummy-data';
+import CommentSection from './component/CommentSection';
 
 
 class App extends Component {
   
   state={
-    userData: dummyData
+    userData: []
   }
   
+  componentDidMount(){
+    this.setState({
+      userData: dummyData
+    })
+  }
   
-  
+
   
   render() {
+    
     return (
       <div className="App">
         <Header />
@@ -24,7 +31,9 @@ class App extends Component {
           <PostContainer user={user} key={user.id} />
           )}
 
-        
+        {this.state.userData.map(user=>
+          <CommentSection user={user} key={user.id} />
+          )}  
       </div>
     );
   }

@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-const Comments = props => {
-   
-    
-    const {username, text}=props.comment 
 
-    return (
-    <div className="commentWrapper">
-      <div className="commentName">{username}</div>
-      <div className="commentText">{text}</div>
-    </div>
-  );
+
+
+class Comments extends Component{
+  
+  
+
+  state={
+    userComments: this.props.userComment
+  }
+  
+  
+  
+  
+  render(){ 
+    return(
+
+      <div className="comments">
+        <div className="comment">
+        <h4>{this.state.userComments.username}</h4>
+        <p>{this.state.userComments.text}</p>
+        </div>
+        
+      </div>
+    );
+  }
 }
 
 
