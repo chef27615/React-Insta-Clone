@@ -9,7 +9,7 @@ class Header extends Component {
   
   
   render() {
-    
+    console.log('in Header comp: ', this.state.user)
     return (
       <div className="headerDiv">
         <div className="instaLogos">
