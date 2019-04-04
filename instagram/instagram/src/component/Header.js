@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 
 class Header extends Component {
+  
+  state={
+    user: this.props.userInfo.username
+  }
+  
+  
+  
   render() {
+    
     return (
       <div className="headerDiv">
         <div className="instaLogos">
@@ -14,6 +22,7 @@ class Header extends Component {
                 type="text"
                 title=""
                 placeholder="Search"
+                onChange={this.handlechange}
             />
         </div>
 
