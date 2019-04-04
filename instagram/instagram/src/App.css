@@ -7,14 +7,14 @@
   text-align: center;
 }
 
-.headerDiv{
+/* .headerDiv{
   width: 55%;
   height: 3rem;;
   margin: 20px auto;
   
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 .instaLogos{
   /* border: 1px solid black; */
@@ -37,7 +37,7 @@
   color: #999;
 }
 
-.searchBar{
+/* .searchBar{
   
   align-self: center;
   height: 100%;
@@ -52,9 +52,9 @@ input{
   background-color: #ededed;
   border: 1px solid #dcdcdc;
   border-radius: 5px;
-}
+} */
 
-.userIcon{
+/* .userIcon{
   
   display: flex;
   justify-content: space-evenly;
@@ -65,25 +65,25 @@ input{
   font-size: 25px;
   margin-top: 13px;
   color: #999;
-}
+} */
 
-.postWrapper{
+/* .postWrapper{
   border: 1px solid #dcdcdc;
   width: 54.5%;
   margin: 10px auto;
-}
+} */
 
-.userInfo {
+/* .userInfo {
   
   margin: 0 auto;
   display: flex;
-}
+} */
 
-.userInfo img {
+/* .userInfo img {
   height: 40px;
   margin: 10px 20px;
   border-radius: 50%;
-}
+} */
 
 .postIcon{
   
@@ -103,20 +103,20 @@ input{
   font-weight: 600;
 }
 
-.commentDiv{
-  /* border: 1px solid orange; */
+/* .commentDiv{
+  border: 1px solid orange;
   text-align: start;
   margin: 0 20px; 
-}
+} */
 
 
-.postTime{
+/* .postTime{
   text-align: start;
   margin-top: 5px;
   margin-left: 20px;
   margin-bottom: 20px;
   font-size: 11px;
   color: #555;
-}
+} */
 
 
