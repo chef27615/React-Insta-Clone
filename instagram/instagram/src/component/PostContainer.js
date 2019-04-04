@@ -1,9 +1,7 @@
 import React from 'react';
-import Comments from './Comments';
 import PropTypes from 'prop-types';
-import CommentForm from './CommentForm';
 import CommentSection from './CommentSection';
-
+import PostIcon from './PostIcon'
 
 class PostContainer extends React.Component{
 
@@ -23,12 +21,7 @@ class PostContainer extends React.Component{
                     </div>
                     <div className="userPost" alt="userPostImg">
                     <img src={imageUrl} alt="images" />
-                    <div className="postIcon">
-                    <i className="far fa-heart"></i>
-                    <i className="far fa-comment"></i>
-                    </div>
-                    <div className="postText">{likes} Likes</div>
-
+                    <PostIcon likes={likes}/>
                     </div>
                     <CommentSection comments = {comments} key = {comments.id}/>
                      <div className="postTime">{timestamp}</div>

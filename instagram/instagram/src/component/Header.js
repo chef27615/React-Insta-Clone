@@ -1,11 +1,5 @@
 import React, { Component } from 'react'
 
-
-
-
-
-
-
 class Header extends Component {
   render() {
     return (
@@ -17,7 +11,6 @@ class Header extends Component {
          
         <div className="searchBar">
             <input 
-                
                 type="text"
                 title=""
                 placeholder="Search"

@@ -4,23 +4,47 @@ import CommentForm from './CommentForm';
 class CommentSection extends Component {
   
   state={
-    comments: this.props.comments
+    comments: this.props.comments,
+    comment:''
   }
   
   
-  addNewComment = comment => {
+  addNewComment = e => {
+
     this.setState({
-        comments: [... this.state.comments, comment]
-    })
+        comment: e.target.value
+    });
+    // console.log(e.target)
   }
-    render() {
-        // console.log(this.state.comments)
+  
+  handleSubmit = e =>{
+      e.preventDefault();
+      
+      const newComment ={
+          text: this.state.comment,
+          username: 'Ray'
+      };
+    //   console.log(this.state.comment)
+      this.setState({
+        comments: [...this.state.comments, newComment],
+        comment:''
+      });
+  }
+  
+  
+  render() {
+        
     return (
+        
        <div>
            {this.state.comments.map(comment=>
             <Comments comment={comment} key={comment.id} />
             )}
-           <CommentForm addNewComment={this.addNewComment} />
+           <CommentForm 
+           addNewComment={this.addNewComment} 
+           comment={this.state.comment}
+           handleSubmit={this.handleSubmit}
+           />
        </div>
     )
   }

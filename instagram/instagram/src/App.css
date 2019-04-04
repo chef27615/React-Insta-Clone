@@ -103,19 +103,12 @@ input{
   font-weight: 600;
 }
 
-.comment{
-  display: grid;
+.commentDiv{
   /* border: 1px solid orange; */
-  grid-template-columns: 1fr 2fr;
   text-align: start;
+  margin: 0 20px; 
 }
-.comment h4{
-  height: 100%;
-  margin: 0 5px 5px 20px;
-}
-.comment p{
-  margin: 0
-}
+
 
 .postTime{
   text-align: start;

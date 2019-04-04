@@ -4,7 +4,7 @@ import './App.css';
 import Header from './component/Header';
 import PostContainer from './component/PostContainer';
 import dummyData from './dummy-data';
-import CommentSection from './component/CommentSection';
+
 
 
 class App extends Component {

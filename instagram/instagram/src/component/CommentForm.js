@@ -1,49 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class CommentForm extends Component {
-
-state={
-    name:''
+const CommentForm=props=> {
+  
+  return (
+    <form onSubmit={props.handleSubmit} >
+        <input 
+            onChange={props.addNewComment}
+            value={props.comment}
+            type="text"
+            placeholder="Say Something..."
+        /> 
+    </form>
     
-}
-
-handleChange=(e)=>{
-    this.setState({
-        [e.target.name]:e.target.value
-    });
-};
-
-handleSubmit=(e)=>{
-    e.preventDefault();
-
-    this.props.addNewComment({
-        name: this.state.name,
-        id: Date.now()
-    })
-
-    this.setState({
-        name:''
-    });
-
-}
-
-
-
-render(){
-    return(
-        <div className="formDiv">
-            <form onSubmit={this.handleSubmit}>
-                <input
-                   type="text"
-                   placeholder="say something"
-                   name="name"
-                   value={this.state.name}
-                   onChange={this.handleChange} 
-                />
-                <button>Post</button>
-            </form>
-        </div>
-    )}
+  )
 }
 
 
