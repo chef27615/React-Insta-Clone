@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-
 import './App.css';
 import Header from './component/Header';
 import PostContainer from './component/PostContainer';
 import dummyData from './dummy-data';
-import CommentSection from './component/CommentSection';
+
 
 
 class App extends Component {
@@ -22,10 +21,12 @@ class App extends Component {
 
   
   render() {
+    console.log(this.state.userData)
     
     return (
       <div className="App">
-        <Header />
+        
+        <Header userInfo={this.state.userData}/>
 
         {this.state.userData.map(user=>
           <PostContainer user={user} key={user.id} />
